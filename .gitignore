@@ -1,19 +1,32 @@
-# Python & Environment
+# Python & Bytecode
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+venv/
 .venv/
 env/
-venv/
+ENV/
 .env
 
-# Jupyter
+# Jupyter Notebook Checkpoints
 .ipynb_checkpoints/
+*/.ipynb_checkpoints/*
 
-# Data & Models
-data/
+# Data & Model Binaries (Keeps repo lightweight)
+data/*.csv
+!data/sample_customer.csv
 models/*.pkl
 models/*.joblib
 
-# OS metadata
+# Operating System Metadata
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
